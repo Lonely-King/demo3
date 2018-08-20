@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数传参</title>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            var  oDiv = document.getElementById('div1');
+            /*
+                函数传参，传一个的时候是传属性的值，如：
+                function abc(a) {
+                oDiv.style[a] = 'red';
+                   abc('color');
+                   */
+
+            // 两个的时候第一个传属性，第二个传值，如：
+
+            function abc(a,b) {
+                oDiv.style[a] = b;
+            }
+            abc('color','gold');
+            abc('background','red');
+            abc('width','300px');
+            abc('height','300px');
+            abc('fontSize','30px');
+
+
+        }
+
+
+    </script>
+</head>
+<body>
+    <div id="div1">div元素</div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>变量函数预解析</title>
+    <script type="text/javascript">
+        //预解析相当于把程序的主逻辑放在前面，工具函数放在后面
+
+        alert(a); // 弹出undefined,声明变量，但没有赋值
+
+        //alert(c); 报错，c没有声明
+
+        var a = 123;
+
+
+        // 弹出 hello!
+        myalert();//函数的声明和定义都会提前，可以在函数的前面来调用函数
+
+        function myalert(){
+
+            alert('hello!');
+
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

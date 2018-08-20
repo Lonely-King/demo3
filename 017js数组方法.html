@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组的常用方法</title>
+    <script type="text/javascript">
+        //定义数组时，定义的值一般为a开头
+        // 定义字符串时，定义的值一般为s开头
+
+        var aRr = [1,2,3,4];
+        var sTr = aRr.join("-");
+        var sTr2 = aRr.join("");
+
+        //alert(sTr); 弹出 1-2-3-4,用"-"链接
+        //alert(sTr2); 弹出  1234，用""链接就是挨在一起
+
+        aRr.push(1);
+        alert(aRr);//弹出1,2,3,4,1，push（）从数组后面增加成员，需要增加的成员写在（）内
+        aRr.pop();
+        alert(aRr);//弹出1,2,3,4,pop（）从数组后面删除一个成员，（）不用填东西，填了也没用
+        aRr.unshift(0)
+        //alert(aRr);  // 弹出 0,1,2,3,4，unshift()从数组前面增加成员，需要增加的成员写在（）内
+        aRr.shift();
+        //alert(aRr);    // 弹出 1,2,3,4，shift从数组前面删除一个成员，（）不用填东西，填了也没用
+        aRr.reverse();
+        //alert(aRr);  // 弹出 4,3,2,1，将数组反转
+
+        var aRr2 = ['a','b','c','d','a','b','c','d'];
+        var num = aRr2.indexOf('b');
+        alert(num);  // 弹出1，indexOf() 返回数组中元素第一次出现的索引值，b第一次出现的索引值是在1
+        /*
+        aRr2.splice(2,1);
+        alert(aRr2);
+        // 弹出 a,b,d,a,b,c,d，从第2个元素开始，删除1个元素
+        */
+        aRr2.splice(2,1,'e');
+        alert(aRr2);  // 弹出 a,b,e,d,a,b,c,d，从第2个元素开始，删除1个元素，然后在此位置增加'e'一个元素
+        aRr2.splice(4,4,'f','g','h','i');
+        alert(aRr2);//弹出 a,b,c,d,f,g,h,i,从第4个元素开始，删除4个元素，然后在此位置增加'f,g,h,i'四个元素
+
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

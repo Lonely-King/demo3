@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>基本语法</title>
+            <script type="text/javascript">
+                window.onload = function () {
+                    document.getElementById("div1").title = "看到了！";
+                    var oA = document.getElementById("link01");
+                    oA.href = "http://www.baidu.com";
+                    oA.title = "去到百度网";
+
+                    alert(oA.id);
+                    /*
+                    = (是赋值）
+                    oA.href = "http://www.baidu.com";
+                    oA.title = "去到百度网";
+                    写属性
+                    alert(oA.id);
+                    读属性
+
+                }
+
+            </script>
+        </head>
+<body>
+    <div id="div1" class="div1" title="div元素" >这是一个div元素</div>
+    <a href="#" id="link01">百度网</a>
+</body>
+</html>

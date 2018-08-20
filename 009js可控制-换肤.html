@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>换肤</title>
+    <link rel="stylesheet" type="text/css" href="1.css" id="link01">
+    <script type="text/javascript">
+        window.onload = function () {
+            var oButton01 = document.getElementById('button01');
+            var oButton02 = document.getElementById('button02');
+            //提取行间事件， oButton01.onclick = pifu01不能有括号，有括号的直接运行
+            oButton01.onclick = pifu01;
+            oButton02.onclick = pifu02;
+
+        }
+
+        function pifu01() {
+            var oLink = document.getElementById("link01");
+            oLink.href = "1.css"
+        }
+        
+        function pifu02() {
+            var oLink =document.getElementById('link01');
+            oLink.href = "2.css"
+            
+        }
+
+
+
+    </script>
+
+</head>
+<body>
+
+<!--
+        行间调用函数onclick="pifu01()"时有括号
+        一般能用js写的，不在行间里面写
+-->
+<!--<input type="button" name="" value="皮肤01" id="" onclick="pifu01()">-->
+<!--<input type="button" name="" value="皮肤02" id="" onclick="pifu02()">-->
+<input type="button" name="" value="皮肤01" id="button01">
+<input type="button" name="" value="皮肤02" id="button02">
+<div class="box01"></div>
+<div class="box02"></div>
+
+</body>
+</html>

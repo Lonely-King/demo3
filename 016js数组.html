@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组</title>
+    <script type="text/javascript">
+        //数组的下标（索引值）是从0开始的（aRr03[1][2]），length从1开始，0=1,1=2,2=3，依此类推
+        //定义数组时，定义的值一般为a开头
+        //new是js里面类的操作方法
+        //实际开发中一般用第二种，性能更高 var aRr02 = [1,2,3,"cdf"];
+        // 第一种创建数组的方式
+        var aRr01 = new Array(1,2,3,'abc');
+        //第二种创建数组的方式
+        var aRr02 = [1,2,3,"cdf"];
+
+        //获取数组的成员数量：
+        //alert(aRr02.length); // 弹出4
+
+        //alert(aRr02[3]); // 弹出第4个成员 cdf
+        //二维数组（等于数组里面放数组，如果是就放多一个[]）；
+        var aRr03 = [[1,2,3],['a','b','c'],[true,false]];
+
+        //alert(aRr03.length); //弹出 3，有3个数组;
+
+        alert(aRr03[1].length);  // 弹出 3，第一个数组有3个子元素
+
+        alert(aRr03[1][2]);  // 弹出 c，第一个数组的第3个子元素
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

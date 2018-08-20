@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+        window.onload = function(){
+
+            var oInput01 = document.getElementById('input01');
+            var oInput02 = document.getElementById('input02');
+            var oInput03 = document.getElementById('input03');
+            var oBtn = document.getElementById('btn');
+
+
+
+            oBtn.onclick = function(){
+
+                var val01 = oInput01.value;
+                var val02 = oInput02.value;
+                var val03 = oInput03.value;
+
+
+                var rs = add(val01,val02,val03);
+                alert(rs);
+
+
+            }
+
+
+
+
+            function add(a,b,c){
+
+                var d = parseInt(a) + parseInt(b) +parseInt(c);
+                alert('计算完成');
+
+
+                // return 返回函数设定的值，同时结束函数的运行。
+
+                return d;
+
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+    </script>
+</head>
+<body>
+<input type="text" name="" id="input01">
+<input type="text" name="" id="input02">
+<input type="text" name="" id="input03">
+<input type="button" name="" value="相加" id="btn">
+</body>
+</html>

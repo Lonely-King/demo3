@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js中括号操作属性</title>
+    <script type="text/javascript">
+        window.onload = function(){
+            var oDiv = document.getElementById("div01");
+            var attr ="background-color";
+            //当定义的属性不是style里面的属性时，用中括号定义，通过[ ]操作属性可以写变量
+            oDiv.style[attr] ="red";
+            //通过innerHTML可以读写标签（元素）里面包裹的内容
+            alert(oDiv.innerHTML);
+            var oDiv2 = document.getElementById('div02');
+            // oDiv2.innerHTML = "这是第二个div元素";
+            oDiv2.innerHTML =  "<a href = 'http://www.baidu.com'>百度网</a> ";
+
+
+        }
+
+
+    </script>
+</head>
+<body>
+    <div id="div01">这是一个div元素</div>
+    <div id="div02"></div>
+
+</body>
+</html>

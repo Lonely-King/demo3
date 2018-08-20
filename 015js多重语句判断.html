@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多重语句判断</title>
+    <script type="text/javascript">
+        <!--多重语句判断一般用  switch(表达式)-->
+        /*
+         if（条件）
+        ｛符合条件的程序｝
+         else
+        ｛不符合条件的程序｝；
+        假如有三种情况，两个判断
+        if（条件1）
+        ｛符合第条件1的程序｝
+        else if(条件2)
+        ｛不符合条件1但符合条件2的程序｝
+        else
+        ｛不符合任何条件的程序｝；
+         */
+        /*
+        var today = 1;
+        if (today==1){
+            alert('语文');
+        }
+        else if (today==2){
+            alert('数学');
+        }
+
+        else if (today == 3) {
+            alert('英语');
+        }
+
+        else if (today == 4) {
+            alert('美术');
+        }
+
+        else if (today == 5) {
+            alert('舞蹈');
+        }
+
+        else  (today == 6)
+        {
+            alert('不补习');
+        }
+        */
+        var today = 1;
+
+
+        /*
+        switch(表达式){
+         switch(表达式){
+     case 值1:
+       表达式的值和 值1匹配上了，需要执行的代码;
+       break;
+     case 值2:
+       表达式的值和 值2匹配上了，需要执行的代码;
+     break;
+     case 值3:
+       表达式的值和 值3匹配上了，需要执行的代码;
+     break;
+     default:
+       如果表达式的值和以上的case后面的值都没有匹配上，那么就执行这里的代码。
+       break;
+        }
+
+        不写break会穿透到下一个break
+         */
+
+        switch (today){
+            case 1:
+            alert('语文');
+            break;
+            case 2:
+            alert('数学');
+            break;
+            case 3:
+            alert('英语');
+            break;
+            case 4:
+            alert('美术');
+            break;
+            case 5:
+            alert('舞蹈');
+            break;
+            default:
+            alert("不补习")
+        }
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
